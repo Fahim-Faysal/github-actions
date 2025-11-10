@@ -1,14 +1,15 @@
 name: test-job
+run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
   printing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@4
+      - uses: actions/checkout@v5
       - run: echo "Hello world........""
   
   testing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@4
+      - uses: actions/checkout@v4
       - run: echo "testing..........."
