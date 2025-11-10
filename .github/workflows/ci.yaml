@@ -18,3 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: echo "testing..........."
+  
+  display:
+    name: secret
+    runs-on: ubuntu-latest
+    steps:
+      - name: use secret
+        run: echo "${{secrets.DB_PASS}}"
