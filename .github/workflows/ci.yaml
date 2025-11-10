@@ -10,5 +10,5 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actins/checkout@4
+      - uses: actions/checkout@4
       - run: echo "testing..........."
